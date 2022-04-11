@@ -63,6 +63,21 @@ odd number
 
 
 5.一个文件含有 N 行内容，每行的内容都是一个大于等于 0 的整数，无任何空行或其它内容，使用 one-liner 的形式对该文件中的数字求和
-参考答案还未准备好
+cat number.txt 
+243245
+23424
+23445
+23454325
+2342
+4342
+342
+342
+432452
+234
+
+#!/bin/bash
+
+cat number.txt |xargs echo -n | tr ' ' '+' | xargs echo | bc
+
 
 
