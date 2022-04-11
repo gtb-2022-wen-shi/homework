@@ -77,7 +77,10 @@ cat number.txt
 
 #!/bin/bash
 
-cat number.txt |xargs echo -n | tr ' ' '+' | xargs echo | bc
+cat number.txt |xargs | tr ' ' '+' | bc
+
+wenshi@LAPTOP-5GG7LHTM:~/gtb-git-remote/homework-clibasic$ oneliner.sh
+24184493
 
 
 
